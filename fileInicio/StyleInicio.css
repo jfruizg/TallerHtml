@@ -50,8 +50,6 @@ body{
 .head{
     background-color: rgb(251, 255, 251);
     height: 60px;
-  
-
 }
 .texto1{
     margin-top: 30px;
@@ -100,4 +98,8 @@ body{
 .texto_pie{
     padding-top: 10px;
     text-align: end;
+}
+.articulo{
+    background-color: tomato;
+    width: 900px;
 }
