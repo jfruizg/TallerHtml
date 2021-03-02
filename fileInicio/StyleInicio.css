@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(126, 192, 201);
+    
+}
+.titulo{
+    margin-top: 20px;
+    font-size: 50px;
+    font-style: italic;
+    margin-left: 30px;
+}
+
+.botonInicio{
+   
+   background-color: rgb(29, 29, 61);
+   color: rgb(230, 230, 230);
+   display: inline-block;
+   font-size: 14px;
+   margin: 0px;
+   padding: 10px 0px;
+   text-align: center;
+   width: 200px;
+   text-decoration: none;
+   box-shadow:0px 3px 0px rgb(66, 64, 64);
+}
+.botonTabla{
+    background-color: rgb(29, 29, 61);
+    color: rgb(230, 230, 230);
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    box-shadow:0px 3px 0px rgb(66, 64, 64);
+ }
+.sub{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: rgb(209, 130, 192);
+    width: 800px;
+}
+.head{
+    background-color: rgb(251, 255, 251);
+    height: 60px;
+  
+
+}
+.texto1{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 700px;
+}
+.imagen1{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 800px;
+    
+}
+
+.register{
+    display: inline-block;
+    margin-left: 30px;
+    background-color: burlywood;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 900px;
+    top: -500px;
+    text-align: center;
+}
+.etiqueta_ID{
+    margin-top: 15px;
+}
+.campo_Registro{
+    margin-left: 45px;
+    background-color: cornsilk;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    
+}
+.pie_Pagina{
+    background-color: rgb(186, 235, 235);
+    height: 80;
+
+}
+.boton1{
+    top: 20px;
+}
+
+.texto_pie{
+    padding-top: 10px;
+    text-align: end;
+}
