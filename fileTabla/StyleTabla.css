@@ -1,52 +1,51 @@
-*{
+body{
+    font-family: georgia, times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+p {
+    margin-bottom: 1.6em;
+}
+h1{
+    line-height: 1.3em;
+    font-size:2rem 
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+header{
+     background: rgb(226, 218, 105);
+     color: darkgray;
+     padding: 2rem 0;
+
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo-navContanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    list-style: none;
 }
-body{
-    background-color: rgb(230, 160, 31);
-    
-}
-.titulo{
-    margin-top: 30px;
-    margin-left: 30px;
-    font-size: 50px;
-    font-style: oblique;
-}
-.botonInicio{
-   
-    background-color: rgb(29, 29, 61);
-    color: rgb(230, 230, 230);
+.navigation ul li{
     display: inline-block;
-    font-size: 14px;
-    margin: 0px;
-    padding: 10px 0px;
-    text-align: center;
-    width: 200px;
-    text-decoration: none;
-    box-shadow:0px 3px 0px rgb(66, 64, 64);
- }
- .botonTabla{
-     background-color: rgb(29, 29, 61);
-     color: rgb(230, 230, 230);
-     display: inline-block;
-     font-size: 14px;
-     margin: 0px;
-     padding: 10px 0px;
-     text-align: center;
-     width: 200px;
-     text-decoration: none;
-     box-shadow:0px 3px 0px rgb(66, 64, 64);
-  }
- .sub{
-     font-size: 20px;
-     margin-top: 15px;
-     margin-left: 30px;
-     width: 800px;
-     background-color: darkgoldenrod;
- }
- .head{
-    background-color: rgb(251, 255, 251);
-    height: 80;
-
+}
+.navigation ul li a{
+    display:block;
+    padding: 0.5rem 1rem ;
+    transition: all 0,4s;
+    border-radius: 5px;
+}
+.navigation ul li a:hover{
+    background: rgb(204, 185, 185);
 }

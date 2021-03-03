@@ -1,1 +1,5 @@
-var nuevoRegistro
+var registro = document.querySelector("#registrar")
+function registrar(){
+      registro
+
+}

@@ -1,105 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
-    background-color: rgb(126, 192, 201);
-    
+    font-family: georgia, times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+p {
+    margin-bottom: 1.6em;
 }
 .titulo{
-    margin-top: 20px;
-    font-size: 50px;
-    font-style: italic;
-    margin-left: 30px;
+    line-height: 1.3em;
+    font-size:2rem;
+    font-style: ;
+    
 }
+h1{
+    line-height: 1.3em;
+    font-size:2rem 
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+header{
+     background: rgb(226, 218, 105);
+     color: darkgray;
+     padding: 2rem 0;
+width: 100%;
+     position: fixed;
+     left: 0;
+     top: 0;
 
-.botonInicio{
-   
-   background-color: rgb(29, 29, 61);
-   color: rgb(230, 230, 230);
-   display: inline-block;
-   font-size: 14px;
-   margin: 0px;
-   padding: 10px 0px;
-   text-align: center;
-   width: 200px;
-   text-decoration: none;
-   box-shadow:0px 3px 0px rgb(66, 64, 64);
 }
-.botonTabla{
-    background-color: rgb(29, 29, 61);
-    color: rgb(230, 230, 230);
-    display: inline-block;
-    font-size: 14px;
-    margin: 0px;
-    padding: 10px 0px;
-    text-align: center;
-    width: 200px;
+.header a{
+    color: white;
     text-decoration: none;
-    box-shadow:0px 3px 0px rgb(66, 64, 64);
- }
-.sub{
-    margin-left: 30px;
-    margin-top: 10px;
-    font-size: 20px;
-    background-color: rgb(209, 130, 192);
-    width: 800px;
 }
-.head{
-    background-color: rgb(251, 255, 251);
-    height: 60px;
+.logo-navContanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.texto1{
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 700px;
+.logo{
+   letter-spacing: 15px;
+   font-size: 1.3em;
+
+
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display:block;
+    padding: 0.5rem 1rem ;
+    transition: all 0,5s;
+    border-radius: 10px;
+}
+.navigation ul li a:hover{
+    background: rgb(173, 133, 133);
+}
+.footer{
+    background: rgb(142, 143, 143);
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+.main{
+    padding-top: 12rem;
 }
 .imagen1{
-    margin-top: 20px;
-    margin-left: 30px;
-    width: 800px;
+    padding-left: 300px;
+}
+@media only screen and (max-width: 767px){
+     
+    .navigation{
+        width: 100%;
+    }
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        display:block;
+        padding: 0.5rem 1rem ;
+        transition: all 0,5s;
+        border-radius: 10px;
+    }
+    .navigation ul li a:hover{
+        background: rgb(173, 133, 133);
+    }
     
-}
 
-.register{
-    display: inline-block;
-    margin-left: 30px;
-    background-color: burlywood;
-    height: 200px;
-    width: 300px;
-    margin-bottom: 30px;
-    position: relative;
-    left: 900px;
-    top: -500px;
-    text-align: center;
-}
-.etiqueta_ID{
-    margin-top: 15px;
-}
-.campo_Registro{
-    margin-left: 45px;
-    background-color: cornsilk;
-    width: 200px;
-    height: 150px;
-    text-align: center;
-    
-}
-.pie_Pagina{
-    background-color: rgb(186, 235, 235);
-    height: 80;
-
-}
-.boton1{
-    top: 20px;
-}
-
-.texto_pie{
-    padding-top: 10px;
-    text-align: end;
-}
-.articulo{
-    background-color: tomato;
-    width: 900px;
 }
