@@ -1,8 +1,8 @@
 body{
     font-family: georgia, times, serif;
     color: #333;
-    font-size: 1.2rem;
-    line-height: 1.6em;
+    font-size: 1.0rem;
+    line-height: 2.0em;
     margin: 0;
 }
 p {
@@ -11,7 +11,7 @@ p {
 .titulo{
     line-height: 1.3em;
     font-size:2rem;
-    font-style: ;
+    font-style: italic;
     
 }
 h1{
@@ -27,7 +27,7 @@ header{
      background: rgb(226, 218, 105);
      color: darkgray;
      padding: 2rem 0;
-width: 100%;
+     width: 100%;
      position: fixed;
      left: 0;
      top: 0;
@@ -76,10 +76,16 @@ width: 100%;
     padding-top: 12rem;
 }
 .imagen1{
-    padding-left: 300px;
+    margin-left: 250px;
 }
 @media only screen and (max-width: 767px){
      
+    main{
+    align-content: center;
+    text-align: center;
+        margin-top: 150px;
+    }
+
     .navigation{
         width: 100%;
     }
