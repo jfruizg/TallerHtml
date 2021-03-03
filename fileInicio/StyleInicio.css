@@ -44,8 +44,7 @@ header{
     flex-wrap: wrap;
 }
 .logo{
-   letter-spacing: 15px;
-   font-size: 1.3em;
+   height: 80px;
 
 
 }
