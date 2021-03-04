@@ -12,12 +12,8 @@ p {
     line-height: 1.3em;
     font-size:2rem;
     font-style: italic;
-    margin-top: 80px;
-   text-align: center;
-   margin-bottom: 20px;
     
 }
-
 h1{
     line-height: 1.3em;
     font-size:2rem 
@@ -74,7 +70,6 @@ header{
     padding: 4rem 0;
     text-align: center;
     margin-top: 6rem;
-    height: 10px;
 }
 .main{
     padding-top: 12rem;
@@ -82,80 +77,6 @@ header{
 .imagen1{
     margin-left: 250px;
 }
-.option1{
-    background: rgb(245, 206, 215);
-   margin-left: 0px;
-   height: 500px;
-   width:250;
-   text-align: center;
-   transition: all 0,5s;
-    border-radius: 10px;
-
-
-} 
-.imagenTarjeta1{
-    width: 200px;
-    margin-top: 25px;
-    margin-left: 0px;
-    height: 200px;
-    
-}
-.option2{
-    background: rgb(245, 206, 215);
-   margin-left: 0px;
-   height: 500px;
-   width:250;
-   text-align: center;
-   transition: all 0,5s;
-   border-radius: 10px;
-
-
-} 
-.imagenTarjeta2{
-    width: 200px;
-    margin-top: 25px;
-    margin-left: 0px;
-    height: 200px;
-    
-}
-
-.conteiner2{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-.option3{
-    background: rgb(245, 206, 215);
-   margin-left: 0px;
-   height: 500px;
-   width:250;
-   text-align: center;
-   transition: all 0,5s;
-   border-radius: 10px;
-
-
-} 
-.imagenTarjeta3{
-    width: 200px;
-    margin-top: 25px;
-    margin-left: 0px;
-    height: 200px;
-    
-    
-}
-.barra{
-    
-    margin-bottom: 80px;
-}
-
-.conteiner2 img:hover{
-    transform: scale(0.9);
-}
-
-
 @media only screen and (max-width: 767px){
      
     main{
