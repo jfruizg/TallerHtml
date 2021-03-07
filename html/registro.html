@@ -2,7 +2,7 @@
 
 <head>
 
-     <link href="../CSS/StyleTabla.css" rel="stylesheet" />
+     <link href="../CSS/StyleRegistro.css" rel="stylesheet" />
 
      <title>Pet-Citizens</title>
      <meta charset="utf-8">
@@ -16,38 +16,56 @@
      <header class="header">
           <div class="container logo-navContanier">
 
-               <a href="#" class="logo">LOGO</a>
+               <a href="#" class="logo">Registro <br> Pet-Citizens</a>
                <nav class="navigation">
                     <ul>
+
                          <li><a href="index.html">Inicio</a></li>
                          <li><a href="registro.html">Registro</a></li>
                          <li><a href="acerca.html">Acerca</a></li>
                          <li><a href="index.html">Servivio</a></li>
                          <li><a href="tablas.html">Tablas</a></li>
+
                     </ul>
                </nav>
           </div>
      </header>
 
-     <main class = "Main">
+     <main class="Main">
 
-          <div class = "container">
-          <h1>hola soy el titulo</h1>
-          
-          </div>
+          <Section class="fomr-register">
+
+               <h4>Registra tu mascota</h4>
+
+               <div>
+                    <form id="action" action="">
+                         <!--"Form" se usa para los formularios-->
+                         <!--el imput forma de ingresar datos-->
+                         <input type="text" name="Localidad" class="control" id="localidad"
+                              placeholder="Ingrese Localidad">
+                         <input type="text" name="Peligroso" class="control" id="peligrosos"
+                              placeholder="Ingrese si el peligroso">
+                         <input type="text" name="Sexo" class="control" id="sexo" placeholder="Ingrese Sexo">
+                         <input type="text" name="Tamaño" class="control" id="tamaño" placeholder="Ingrese Tamaño">
+                         <input type="text" name="Especie" class="control" id="especie" placeholder="Ingrese Especie">
+
+                         <input class="boton" type="submit" value="register" id="boton_registro">
+                         <!--Forma de crear boton-->
+                    </form>
+               </div>
+
+          </Section>
 
      </main>
 
      <footer class="footer">
-          <div class = "container"> 
+          <div class="container">
                <p>diesñada por juan felipe ruiz</p>
           </div>
      </footer>
 
-    
-     <script src="Script.js">
-          <link href="Scipt.js" rel="Scriptsheet" />
-     </script>
+
+     <script src="../Script/Script.js"></script>
 
 </body>
 
