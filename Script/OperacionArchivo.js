@@ -1,4 +1,5 @@
 
+
 console.log("fuciona");
 
 const csvtojson = require('csvtojson')
@@ -6,14 +7,14 @@ const csvtojson = require('csvtojson')
 const fs = require('fs')
 
 //const { join } = require('node:path');
-const csvfilepath = "../Script/simple.csv"
+const csvfilepath = "simple.csv"
 
 csvtojson()
 .fromFile(csvfilepath)
 .then((json) => {
     console.log(json)
  
-    fs.writeFileSync("../Script/output.json", JSON.stringify(json), "utf-8", (err) => {
+    fs.writeFileSync("output.json", JSON.stringify(json), "utf-8", (err) => {
         const miTitulo = document.querySelector('h1');
 
         if(err) miTitulo.textContent = err;
