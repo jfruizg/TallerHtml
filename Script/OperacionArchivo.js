@@ -1,13 +1,10 @@
 
-
-console.log("fuciona");
-
 const csvtojson = require('csvtojson')
-
+const csvfilepath = "../Script/simple.csv"
 const fs = require('fs')
 
 //const { join } = require('node:path');
-const csvfilepath = "simple.csv"
+
 
 csvtojson()
 .fromFile(csvfilepath)
