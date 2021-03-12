@@ -12,9 +12,7 @@ csvtojson()
     console.log(json)
  
     fs.writeFileSync("output.json", JSON.stringify(json), "utf-8", (err) => {
-        const miTitulo = document.querySelector('h1');
-
-        if(err) miTitulo.textContent = err;
+        if(err) console.log(err);
     })  
 })
 
