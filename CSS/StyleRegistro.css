@@ -8,7 +8,7 @@ body{
     font-size: 1.0rem;
     line-height: 2.0em;
     margin: 0;
-    background-image: url("../image/fondoMascotas.jpg");
+    background-image: url("../image/fondoMascota.jpg");
 }
 p {
     margin-bottom: 1.6em;
@@ -82,7 +82,9 @@ header{
 .imagen1{
     margin-left: 250px;
 }
-.fomr-register{
+
+.fomr-register .formularioRegistrar{
+    
     width: 400px;
     background: rgb(222, 228, 140);
     padding: 30px;
@@ -91,6 +93,16 @@ header{
     border-radius: 4px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+}
+
+.fomr-register .boton_actualizar{
+    width: 100%;
+    background: cornflowerblue;
+    padding: 12px;
+    border: none;
+    color: cornsilk;
+    font-size: 16px;
+    margin: 16px 0px;
 }
 .fomr-register h4{
   font-size: 22px;
@@ -105,7 +117,7 @@ header{
     border-radius: 4px;
     margin-bottom: 16px;
 }
-.fomr-register .Boton{
+.fomr-register .boton_registro .boton{
      width: 100%;
      background: cornflowerblue;
      padding: 12px;
@@ -115,6 +127,10 @@ header{
      margin: 16px 0px;
 
 }
+.boton{
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 767px){
      
