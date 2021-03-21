@@ -1,5 +1,5 @@
 
-document.querySelector('#boton').addEventListener('click', traerDatos);
+document.querySelector('#boton').addEventListener('click', traerDatos());
 
 function traerDatos() {
 
@@ -23,12 +23,13 @@ function traerDatos() {
                 resp.innerHTML += `
             <tr>
             <th scope="row">${i}</th>
-             <td>${i.name}</td>
-             <td>${i.age}</td>
-             <td>${i.subject}</td>
-             <td>${i.field4}</td>
-             <td>${i.field5}</td>
-             <td>${i.field6}</td>
+             <td>${i.microchip}</td>
+             <td>${i.specie}</td>
+             <td>${i.sex}</td>
+             <td>${i.size}</td>
+             <td>${i.potencialDangerous}</td>
+             <td>${i.neighborhood}</td> 
+              
            </tr>
              `
             }
