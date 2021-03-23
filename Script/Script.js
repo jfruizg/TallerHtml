@@ -19,13 +19,13 @@ class mascota {
     }
 }
 
+
 const form = document.getElementById("action")
 var baseDatos = [];
 
+
 document.querySelector('#botonRegistro').addEventListener('click', agregarDato);
 function agregarDato(){
-
-
 
     const id = 12000;
     const microchip = 12312312;
@@ -43,13 +43,17 @@ function agregarDato(){
     console.log(obj);
     baseDatos.push(obj);
     
-   
+    const myJsonString = JSON.stringify(baseDatos)
+
+    
 
    }else{
-       alert('Agregar datos')
+       alert('Se beden agregar datos')
    
 
 }
+
+
 
 }
 

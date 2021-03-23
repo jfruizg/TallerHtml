@@ -10,10 +10,11 @@
      <meta name="Keywords" content="perros,mascotas,canino,felino">
      <meta name="description" content="Per-ctizens un lugar donde va a poder regstrar a tu amigo de 4 patas  ">
      <meta name="author" content="Andres Nuñez, Juan Felipe Ruiz">
-
+     <script src= "../Script/Regisrar.js"></script>
 </head>
 
 <body>
+     
      <header class="header">
           <div class="container logo-navContanier">
 
@@ -32,17 +33,29 @@
           </div>
      </header>
 
+
+
+
+     
+     
      <main class="Main">
 
           <Section class="fomr-register">
 
-               <h4>Registra tu mascota</h4>
+             
 
-               <div class="contenedor_registrar"></div>
-               <form id="action" action="" class="formularioRegistrar">
+               <div class="contenedor_registrar">
+                    
+               </div>
+               <form id="     " action="" class="formularioRegistrar">
                     <div id="form">
+                         <h4>Registra tu mascota</h4>
                          <!--"Form" se usa para los formularios-->
                          <!--el imput forma de ingresar datos-->
+                         <input type="text" name="ID" class="control" id="Id"
+                         placeholder="Ingrese Id">
+                         <input type="text" name="microchip" class="control" id="microchip"
+                         placeholder="Ingrese microchip">
                          <input type="text" name="Localidad" class="control" id="localidad"
                               placeholder="Ingrese Localidad">
                          <input type="text" name="Peligroso" class="control" id="peligrosos"
@@ -55,21 +68,42 @@
                          <!--Forma de crear boton-->
                          <p class="warning" id="warning"></p>
                     </div>
+
+
+          <div class="conteiner">
+          <div class="row">
+                    <div class="mt-5" >
+                       
+                     </div id="tabla-animalesNuevos">
+                    <table class="table">
+                         <thead>
+                          <tr>
+                               <th>Id</th>
+                               <th>Microchip</th>
+                               <th>Specie</th>
+                               <th>Sex</th>
+                               <th>Size</th>
+                               <th>PotenciallyDangerous</th>
+                               <th>Neighborhood</th>
+                          </tr>
+                         </thead>
+                         <tbody id="animales-tabla">
+              
+                              
+                         </tbody>
+                    </table>
+                    </div>
+                     <button id="visualizar-tabla" type="button">Mostrar Tabla</button>
+               </div>
+          </div>
+     </div>
+
+
+
                </form>
                </div>
-
           </Section>
-
-
-
      </main>
-
-     <footer class="footer">
-          <div class="container">
-               <p>diesñada por juan felipe ruiz</p>
-          </div>
-     </footer>
-
 
      <script src="../Script/Script.js"></script>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -81,6 +115,7 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
           crossorigin="anonymous"></script>
+
 
 </body>
 

@@ -23,7 +23,9 @@ h1{
     line-height: 1.3em;
     font-size:2rem 
 }
+
 .container{
+    font-size: x-large;
     width: 85%;
     max-width: 850px;
     margin: 0 auto;
@@ -85,7 +87,7 @@ header{
 
 .fomr-register .formularioRegistrar{
     
-    width: 400px;
+    width: 750px;
     background: rgb(222, 228, 140);
     padding: 30px;
     margin: auto;
@@ -151,6 +153,5 @@ header{
     .navigation ul li a:hover{
         background: rgb(173, 133, 133);
     }
-    
-
+   
 }
