@@ -37,4 +37,5 @@ function nuevaMascota (event){
     var neighborhoodUsuario = document .getElementById("tamaño").value;     
     var nuevaMascota =  {id:idUsuario, microchip:microchipUsuario , especie:especieUsuario, sex:sexUsuario, size:sizeUsuario, potenciallyDangerous:potenciallyDangerousUsuario, neighborhood:neighborhoodUsuario};
     animalesList.push(nuevaMascota);
+
 }

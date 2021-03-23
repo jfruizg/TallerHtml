@@ -44,7 +44,7 @@ function agregarDato(){
     baseDatos.push(obj);
     
     const myJsonString = JSON.stringify(baseDatos)
-
+        
     
 
    }else{
