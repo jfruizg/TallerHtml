@@ -2,122 +2,75 @@
 
 <head>
 
-     <link href="../CSS/StyleActualizar.css" rel="stylesheet" />
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <title>Pet-Citizens</title>
-     <meta charset="utf-8">
-     <meta name="Keywords" content="perros,mascotas,canino,felino">
-     <meta name="description" content="Per-ctizens un lugar donde va a poder regstrar a tu amigo de 4 patas  ">
-     <meta name="author" content="Andres Nuñez, Juan Felipe Ruiz">
-     <script src= "../Script/Regisrar.js"></script>
+    <link href="../CSS/StyleActualizar.css" rel="stylesheet" />
+
+    <title>Pet-Citizens</title>
+    <meta charset="utf-8">
+    <meta name="Keywords" content="perros,mascotas,canino,felino">
+    <meta name="description" content="Per-ctizens un lugar donde va a poder regstrar a tu amigo de 4 patas  ">
+    <meta name="author" content="Andres Nuñez, Juan Felipe Ruiz">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
 </head>
 
 <body>
-     
-     <header class="header">
-          <div class="container logo-navContanier">
+    <header class="header">
+        <div class="container logo-navContanier">
+            <img src="../image/logo_size.jpg" class="logo"></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="actualizar.html">Actualizar</a></li>
+                    <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="index.html">Servivio</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="Main">
 
-               <a href="#" class="logo">Registro <br> Pet-Citizens</a>
-               <nav class="navigation">
-                    <ul>
-                         <li><a href="index.html">Inicio</a></li>
-                         <li><a href="registro.html">Registro</a></li>
-                         <li><a href="actualizar.html">Actualizar</a></li>
-                         <li><a href="acerca.html">Acerca</a></li>
-                         <li><a href="index.html">Servivio</a></li>
-                         <li><a href="tablas.html">Tablas</a></li>
+        <Section class="fomr-register">
 
-                    </ul>
-               </nav>
-          </div>
-     </header>
+            <h4>Registra tu mascota</h4>
 
+            <div class="contenedor_registrar"></div>
+            <form id="action" action="" class="formularioRegistrar">
+                <div id="form">
+                    <h4>Actualizar tu mascota</h4>
+                    <!--"Form" se usa para los formularios-->
+                    <!--el imput forma de ingresar datos-->
+                    <input type="text" name="ID" class="control" id="Id" placeholder="Ingrese Id">
+                    <input type="text" name="microchip" class="control" id="microchip" placeholder="Ingrese microchip">
+                    <input type="text" name="Localidad" class="control" id="localidad" placeholder="Ingrese Localidad">
+                    <input type="text" name="Peligroso" class="control" id="peligrosos" placeholder="Ingrese si el peligroso">
+                    <input type="text" name="Sexo" class="control" id="sexo" placeholder="Ingrese Sexo">
+                    <input type="text" name="Tamaño" class="control" id="tamaño" placeholder="Ingrese Tamaño">
+                    <input type="text" name="Especie" class="control" id="especie" placeholder="Ingrese Especie">
+                    <input type="text" name="Raza" class="control" id="Raza" placeholder="Ingrese Raza">
 
+                    <button type="button" onclick="check()">registrar</button>
+                    <!--Forma de crear boton-->
+                    <p class="warning" id="warning"></p>
+                </div>
+            </form>
+            </div>
 
-
-     
-     
-     <main class="Main">
-
-          <Section class="fomr-register">
-
-             
-
-               <div class="contenedor_registrar">
-                    
-               </div>
-               <form id="     " action="" class="formularioRegistrar">
-                    <div id="form">
-                         <h4>Registra tu mascota</h4>
-                         <!--"Form" se usa para los formularios-->
-                         <!--el imput forma de ingresar datos-->
-                         <input type="text" name="ID" class="control" id="Id"
-                         placeholder="Ingrese Id">
-                         <input type="text" name="microchip" class="control" id="microchip"
-                         placeholder="Ingrese microchip">
-                         <input type="text" name="Localidad" class="control" id="localidad"
-                              placeholder="Ingrese Localidad">
-                         <input type="text" name="Peligroso" class="control" id="peligrosos"
-                              placeholder="Ingrese si el peligroso">
-                         <input type="text" name="Sexo" class="control" id="sexo" placeholder="Ingrese Sexo">
-                         <input type="text" name="Tamaño" class="control" id="tamaño" placeholder="Ingrese Tamaño">
-                         <input type="text" name="Especie" class="control" id="especie" placeholder="Ingrese Especie">
-                         <input type="text" name="Raza" class="control" id="Raza" placeholder="Ingrese Raza">
-
-                         <button class="btn btn-success" id="botonRegistro" type="button">Registro</button>
-                         <!--Forma de crear boton-->
-                         <p class="warning" id="warning"></p>
-                    </div>
-
-
-          <div class="conteiner">
-          <div class="row">
-                    <div class="mt-5" >
-                       
-                     </div id="tabla-animalesNuevos">
-                    <table class="table">
-                         <thead>
-                          <tr>
-                               <th>Id</th>
-                               <th>Microchip</th>
-                               <th>Specie</th>
-                               <th>Sex</th>
-                               <th>Size</th>
-                               <th>Race</th>
-                               <th>PotenciallyDangerous</th>
-                               <th>Neighborhood</th>
-                          </tr>
-                         </thead>
-                         <tbody id="animales-tabla">
-              
-                              
-                         </tbody>
-                    </table>
-                    </div>
-                     <button id="visualizar-tabla" type="button">Mostrar Tabla</button>
-               </div>
-          </div>
-     </div>
+        </Section>
 
 
 
-               </form>
-               </div>
-          </Section>
-     </main>
+    </main>
 
-     <script src="../Script/Script.js"></script>
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin="anonymous"></script>
+    <footer class="footer">
+        <div class="container">
+            <p>diesñada por juan felipe ruiz, Andres Nuñez, Jose Navas W</p>
+        </div>
+    </footer>
 
+
+    <script src="../Script/Script.js"></script>
 
 </body>
 

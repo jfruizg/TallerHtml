@@ -1,61 +1,105 @@
-class mascota {
+const datos = []
+var cont;
+d3.dsv(";", "../Data/pets-citizens.csv", Data => {
+    console.log(Data);
+    datos.push(Data);
+});
 
-    id
-    microchip
-    species
-    sex
-    size
-    potentDangerous
-    neighborhood
+function generateT(f) {
+    var table = document.getElementById("table");
+    if (table.rows.length != 1) {
+        for (i = 0; i < table.rows.length; i++) {
+            table.deleteRow(1);
+            generateT(f);
+        }
+    } else {
+        for (i = f; i <= f + 9; i++) {
+            try {
+                var linea = table.insertRow(1);
+                var cell1 = linea.insertCell(0);
+                var cell2 = linea.insertCell(1);
+                var cell3 = linea.insertCell(2);
+                var cell4 = linea.insertCell(3);
+                var cell5 = linea.insertCell(4);
+                var cell6 = linea.insertCell(5);
+                cell1.innerHTML = datos[i].microchip;
+                cell2.innerHTML = datos[i].neighborhood;
+                cell3.innerHTML = datos[i].potentDangerous;
+                cell4.innerHTML = datos[i].size;
+                cell5.innerHTML = datos[i].sex;
+                cell6.innerHTML = datos[i].species;
+            } catch {
 
-    constructor(id, microchip, species, sex, size, potentDangerous, neighborhood) {
-        this.id = id;
-        this.microchip = microchip;
-        this.species = species;
-        this.sex = sex;
-        this.size = size;
-        this.potentDangerous = potentDangerous;
-        this.neighborhood = neighborhood;
+            }
+        }
+    }
+}
+
+function first() {
+    cont = 0;
+    generateT(cont);
+}
+
+function last() {
+    cont = datos.length - 10;
+    generateT(cont);
+}
+
+function next() {
+    if (cont >= datos.length - 10) {
+        cont = datos.length - 10;
+    } else {
+        cont = cont + 10;
+    }
+    generateT(cont);
+}
+
+function past() {
+    if (cont <= 0) {
+        cont = 0;
+    } else {
+        cont = cont - 10
+    }
+    generateT(cont);
+}
+
+function check() {
+    var micr = document.getElementById("Microchip").value.toUpperCase();
+    generateT();
+    for (i = 0; i < datos.length; i++) {
+        if (datos[i].microchip === micr) {
+            datos[i].microchip = document.getElementById("Microchip").value.toUpperCase();
+            datos[i].neighborhood = document.getElementById("Neighborhood").value.toUpperCase();
+            datos[i].potentDangerous = document.getElementById("danger").value.toUpperCase();
+            datos[i].size = document.getElementById("Size").value.toUpperCase();
+            datos[i].sex = document.getElementById("Sex").value.toUpperCase();
+            datos[i].species = document.getElementById("Species").value.toUpperCase();
+            i = datos.length - 1;
+        } else if (i === datos.length - 1) {
+            add();
+        }
     }
 }
 
 
-const form = document.getElementById("action")
-var baseDatos = [];
-
-
-document.querySelector('#botonRegistro').addEventListener('click', agregarDato);
-function agregarDato(){
-
-    const id = 12000;
-    const microchip = 12312312;
-    const localidad = document.getElementById('localidad').value;
-    const peligrosos = document.getElementById('peligrosos').value;
-    const sexo = document.getElementById('sexo').value;
-    const tamaño = document.getElementById('tamaño').value;
-    const especie = document.getElementById('especie').value;
-
-
-    if (localidad != "" && peligrosos != "" && sexo != "" && tamaño != "" && especie != "" ){
-
-
-        const obj = new mascota(id, microchip, especie, sexo, tamaño, peligrosos, localidad);
-    console.log(obj);
-    baseDatos.push(obj);
-    
-    const myJsonString = JSON.stringify(baseDatos)
-        
-    
-
-   }else{
-       alert('Se beden agregar datos')
-   
-
+function search() {
+    var obs = (document.getElementById("value").value).toUpperCase();
+    generateT();
+    for (i = 0; i < datos.length; i++) {
+        if (datos[i].microchip === obs || datos[i].neighborhood === obs || datos[i].potentDangerous === obs || datos[i].size === obs || datos[i].sex === obs || datos[i].species === obs) {
+            var linea = table.insertRow(1);
+            var cell1 = linea.insertCell(0);
+            var cell2 = linea.insertCell(1);
+            var cell3 = linea.insertCell(2);
+            var cell4 = linea.insertCell(3);
+            var cell5 = linea.insertCell(4);
+            var cell6 = linea.insertCell(5);
+            cell1.innerHTML = datos[i].microchip;
+            cell2.innerHTML = datos[i].neighborhood;
+            cell3.innerHTML = datos[i].potentDangerous;
+            cell4.innerHTML = datos[i].size;
+            cell5.innerHTML = datos[i].sex;
+            cell6.innerHTML = datos[i].species;
+        }
+    }
 }
-
-
-
-}
-
-
-

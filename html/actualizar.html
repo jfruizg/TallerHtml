@@ -2,75 +2,75 @@
 
 <head>
 
-     <link href="../CSS/StyleActualizar.css" rel="stylesheet" />
+    <link href="../CSS/StyleActualizar.css" rel="stylesheet" />
 
-     <title>Pet-Citizens</title>
-     <meta charset="utf-8">
-     <meta name="Keywords" content="perros,mascotas,canino,felino">
-     <meta name="description" content="Per-ctizens un lugar donde va a poder regstrar a tu amigo de 4 patas  ">
-     <meta name="author" content="Andres Nuñez, Juan Felipe Ruiz">
+    <title>Pet-Citizens</title>
+    <meta charset="utf-8">
+    <meta name="Keywords" content="perros,mascotas,canino,felino">
+    <meta name="description" content="Per-ctizens un lugar donde va a poder regstrar a tu amigo de 4 patas  ">
+    <meta name="author" content="Andres Nuñez, Juan Felipe Ruiz">
 
 </head>
 
 <body>
-     <header class="header">
-          <div class="container logo-navContanier">
+    <header class="header">
+        <div class="container logo-navContanier">
+            <img src="../image/logo_size.jpg" class="logo"></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="actualizar.html">Actualizar</a></li>
+                    <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="index.html">Servivio</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-               <a href="#" class="logo">Registro <br> Pet-Citizens</a>
-               <nav class="navigation">
-                    <ul>
-                         <li><a href="index.html">Inicio</a></li>
-                         <li><a href="registro.html">Registro</a></li>
-                         <li><a href="actualizar.html">Actualizar</a></li>
-                         <li><a href="acerca.html">Acerca</a></li>
-                         <li><a href="index.html">Servivio</a></li>
-                         <li><a href="tablas.html">Tablas</a></li>
+    <main class="Main">
 
-                    </ul>
-               </nav>
-          </div>
-     </header>
+        <Section class="fomr-register">
 
-     <main class="Main">
+            <h4>Registra tu mascota</h4>
 
-          <Section class="fomr-register">
+            <div class="contenedor_registrar"></div>
+            <form id="action" action="" class="formularioRegistrar">
+                <div id="form">
+                    <h4>Actualizar tu mascota</h4>
+                    <!--"Form" se usa para los formularios-->
+                    <!--el imput forma de ingresar datos-->
+                    <input type="text" name="ID" class="control" id="Id" placeholder="Ingrese Id">
+                    <input type="text" name="microchip" class="control" id="microchip" placeholder="Ingrese microchip">
+                    <input type="text" name="Localidad" class="control" id="localidad" placeholder="Ingrese Localidad">
+                    <input type="text" name="Peligroso" class="control" id="peligrosos" placeholder="Ingrese si el peligroso">
+                    <input type="text" name="Sexo" class="control" id="sexo" placeholder="Ingrese Sexo">
+                    <input type="text" name="Tamaño" class="control" id="tamaño" placeholder="Ingrese Tamaño">
+                    <input type="text" name="Especie" class="control" id="especie" placeholder="Ingrese Especie">
+                    <input type="text" name="Raza" class="control" id="Raza" placeholder="Ingrese Raza">
 
-               <h4>Registra tu mascota</h4>
+                    <button class="btn btn-success" id="" type="button">Actualizar</button>
+                    <!--Forma de crear boton-->
+                    <p class="warning" id="warning"></p>
+                </div>
+            </form>
+            </div>
 
-               <div class="contenedor_registrar"></div>
-               <form id="action" action="" class="formularioRegistrar">
-                    <div id="form">
-                         <!--"Form" se usa para los formularios-->
-                         <!--el imput forma de ingresar datos-->
-                         <input type="text" name="Localidad" class="control" id="localidad"
-                              placeholder="Ingrese Localidad">
-                         <input type="text" name="Peligroso" class="control" id="peligrosos"
-                              placeholder="Ingrese si el peligroso">
-                         <input type="text" name="Sexo" class="control" id="sexo" placeholder="Ingrese Sexo">
-                         <input type="text" name="Tamaño" class="control" id="tamaño" placeholder="Ingrese Tamaño">
-                         <input type="text" name="Especie" class="control" id="especie" placeholder="Ingrese Especie">
-                         <input type="button" name="Actualizar" class="control" id="actualizar" placeholder="actualizar">
-                         <button class="boton_registro">Registrarse</button>
-                         <!--Forma de crear boton-->
-                         <p class="warning" id="warning"></p>
-                    </div>
-               </form>
-               </div>
-
-          </Section>
-
-          
-
-     </main>
-
-     <footer class="footer">
-          <div class="container">
-               <p>diesñada por juan felipe ruiz</p>
-          </div>
-     </footer>
+        </Section>
 
 
-     <script src="../Script/Script.js"></script>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>diesñada por juan felipe ruiz, Andres Nuñez, Jose Navas W</p>
+        </div>
+    </footer>
+
+
+    <script src="../Script/Script.js"></script>
 
 </body>
 

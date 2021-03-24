@@ -1,116 +1,124 @@
-body{
+body {
     font-family: georgia, times, serif;
     color: #333;
     font-size: 1.0rem;
     line-height: 2.0em;
     margin: 0;
 }
+
 p {
     margin-bottom: 1.6em;
 }
-.titulo{
+
+.titulo {
     line-height: 1.3em;
-    font-size:2rem;
+    font-size: 2rem;
     font-style: italic;
-    
 }
-h1{
+
+h1 {
     line-height: 1.3em;
-    font-size:2rem 
+    font-size: 2rem
 }
-.container{
+
+.container {
     width: 85%;
     max-width: 850px;
     margin: 0 auto;
 }
-header{
-     background: rgb(226, 218, 105);
-     color: darkgray;
-     padding: 2rem 0;
-     width: 100%;
-     position: fixed;
-     left: 0;
-     top: 0;
 
+header {
+    background: rgb(226, 218, 105);
+    color: darkgray;
+    padding: 2rem 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
-.header a{
+
+.header a {
     color: white;
     text-decoration: none;
 }
-.logo-navContanier{
+
+.logo-navContanier {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.logo{
-   height: 80px;
 
-
+.logo {
+    height: 80px;
 }
-.navigation ul{
+
+.navigation ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.navigation ul li{
+
+.navigation ul li {
     display: inline-block;
 }
-.navigation ul li a{
-    display:block;
-    padding: 0.5rem 1rem ;
-    transition: all 0,5s;
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0, 5s;
     border-radius: 10px;
 }
-.navigation ul li a:hover{
+
+.navigation ul li a:hover {
     background: rgb(173, 133, 133);
 }
-.footer{
+
+.footer {
     background: rgb(142, 143, 143);
     padding: 4rem 0;
     text-align: center;
     margin-top: 6rem;
 }
-.main{
+
+.main {
     padding-top: 12rem;
 }
-.imagen1{
+
+.imagen1 {
     margin-left: 250px;
 }
-.section1{
-    opacity: .7;
-    background-color: rgba(250, 166, 127, 0.8);
-    padding: 20px;
-    color: black;
+
+.tabla {
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: rgb(185, 203, 238);
 }
-.tabla1 .table{
-    background-color: rgba(238, 208, 73, 0.8);
-    padding: 20px;
-    color: black;
+
+.style {
+    margin-top: 30px;
 }
-@media only screen and (max-width: 767px){
-     
-    main{
-    align-content: center;
-    text-align: center;
+
+@media only screen and (max-width: 767px) {
+    main {
+        align-content: center;
+        text-align: center;
         margin-top: 150px;
     }
-
-    .navigation{
+    .navigation {
         width: 100%;
     }
-    .navigation ul li{
+    .navigation ul li {
         display: block;
     }
-    .navigation ul li a{
-        display:block;
-        padding: 0.5rem 1rem ;
-        transition: all 0,5s;
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0, 5s;
         border-radius: 10px;
     }
-    .navigation ul li a:hover{
+    .navigation ul li a:hover {
         background: rgb(173, 133, 133);
     }
-    
-
 }
